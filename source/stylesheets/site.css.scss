@@ -106,10 +106,17 @@ header {
     li {
       display: inline;
       line-height: 1.414em;
-      margin-right: 10px;
+      margin-right: 2.618em;
 
       &.login {
         margin-left: 40px;
+      }
+    }
+    a {
+      color: inherit;
+      font-weight: bold;
+      &:hover {
+        color: #e85a71;
       }
     }
   }
