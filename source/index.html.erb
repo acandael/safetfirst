@@ -22,8 +22,8 @@ title: Get prepared for the VCA exam
       <ul>
         <li><i class="fa fa-caret-right"></i><a href="">Chapter1: Personal Protective Equipment</a></li>
         <li><i class="fa fa-caret-right"></i><a href="">Chapter2: Personal Protective Equipment</a></li>
-        <li class="open"><i class="fa fa-caret-down"></i><a href="">Chapter3: Personal Protective Equipment</a>
-        <ul>
+        <li class="open"><i class="fa fa-caret-right"></i><a href="javascript:void(0)" class="js-accordion-trigger">Chapter3: Personal Protective Equipment</a>
+        <ul class="submenu">
           <li>Content</li>
           <li>Quiz</li>
         </ul>
@@ -63,3 +63,11 @@ title: Get prepared for the VCA exam
       </div><!-- inner -->
   </div><!-- content -->
 </div>
+<script>
+$('.js-accordion-trigger').bind('click', function(e){
+  jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
+  jQuery(this).parent().toggleClass('is-expanded');
+  jQuery(this).prev().toggleClass('fa-caret-right fa-caret-down');
+  e.preventDefault();
+});
+</script>

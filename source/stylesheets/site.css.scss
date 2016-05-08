@@ -132,3 +132,11 @@ h2 {
   color: #c9d6de;
 }
 
+ul.submenu {
+  display: none;
+}
+
+.is-expanded {
+  display: block;
+  padding-bottom: 0;
+ }
